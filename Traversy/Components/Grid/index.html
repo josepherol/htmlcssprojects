@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Tutorial</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 70% 30%;
+            /* grid-column-gap: 1em; */
+            /* grid-row-gap: 1em; */
+            grid-gap: 1em;
+        }
+        .wrapper > div{
+            background: #eee;
+            padding: 1em;
+        }
+        .wrapper > div:nth-child(odd){
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vero ab ipsam odit laudantium at molestiae sunt itaque! Minima exercitationem fugiat, ullam et laboriosam itaque aspernatur officiis ducimus, accusamus repudiandae nemo. Labore reprehenderit delectus voluptas at possimus ducimus est quidem nulla consequuntur illum neque ad, ea obcaecati ipsa consectetur consequatur iure sint quisquam dolores dolore vel magnam. Reiciendis magni suscipit, iste quam culpa in sint cupiditate optio architecto magnam expedita quas quibusdam enim recusandae. Ipsum consectetur voluptatum nemo quisquam natus!
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eveniet consequuntur repellat ut at, neque reiciendis iste ex vitae quod fugiat minima culpa tempora architecto rem eos dolore! Provident, doloribus.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eveniet consequuntur repellat ut at, neque reiciendis iste ex vitae quod fugiat minima culpa tempora architecto rem eos dolore! Provident, doloribus.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eveniet consequuntur repellat ut at, neque reiciendis iste ex vitae quod fugiat minima culpa tempora architecto rem eos dolore! Provident, doloribus.
+        </div>
+    </div>
+</body>
+</html>
