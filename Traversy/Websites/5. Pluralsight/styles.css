@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@100;200;300;500;600;700&family=Rubik&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    overflow: hidden;
+    color: #fff;
+    background: #181818;
+}
+
+h1{
+    font-weight: 400;
+}
+
+.strong-text{
+    font-weight: 700;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    height: 100vh;
+}
+
+#left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100px; */
+    text-align: center;
+    justify-content: space-around;
+}
+
+#right{
+    background: url('https://image.ibb.co/cO9Lxq/login-bg.jpg') no-repeat center center/cover;
+}
+
+.logo img{
+    width: 310px;
+    margin-top: 110px;
+}
+
+.sign-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-form form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+
+
+.sign-form input{
+    margin-bottom: 20px;
+    height: 40px;
+    background: #181818;
+    color: white;
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+
+.sign-form label{
+    text-align: start;
+    font-size: medium;
+    font-weight: 400px;
+}
+
+.sign-form button{
+    margin-top: 20px;
+    padding: 10px;
+    background: rgb(0, 101, 152);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.sign-form button:hover {background-color: rgb(0, 57, 85);}
+
+.sign-form button:active {
+  background-color: rgb(0, 57, 85);;
+  box-shadow: 0 1px #666;
+  transform: translateX(1px);
+}
+
+.signin{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+@media(min-width: 1200px){
+    #left{
+        flex: 1;
+    }
+    #right{
+        flex: 2;
+    }
+}
+
+@media(max-width: 1200px){
+    #left{
+        flex: 2;
+    }
+    #right{
+        flex: 3;
+    }
+}
+
+@media(max-width: 1300px){
+    #left{
+        flex: 1;
+    }
+    #right{
+        flex: 1;
+    }
+}
+
+@media(max-width: 1000px){
+    #right{
+        display: none;
+    }
+}

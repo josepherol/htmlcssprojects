@@ -1,0 +1,126 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display?styles=98774,98773,98770');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+.main-menu ul{
+    list-style: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.main-menu ul{
+    height: 44px;
+    display: flex;
+    padding: 10px;
+    font-size: 12px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.main-menu ul li{
+    color: rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.3px;
+    cursor: pointer;
+}
+
+.iTuneslogo{
+    width: 113px;
+}
+
+.MicrosoftLogo{
+    width: 204px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+header h2{
+    margin-top: 8px;
+    font-size: 32px;
+}
+
+header .top{
+    margin-top: 8px;
+}
+
+header h1{
+    font-size: 60px;
+}
+
+header .ptop{
+    margin-top: 10px;
+}
+
+header p{
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    font-size: 20px;
+}
+
+header .pbottom{
+    margin-top: 40px;
+}
+
+.MicrosoftLogo{
+    margin-top: 30px;
+}
+
+.SmartMockup{
+    margin-top: 60px;
+}
+
+.systemreq p{
+    text-align: center;
+    margin-top: 40px;
+    letter-spacing: 0.8px;
+    color: rgb(0, 102, 204);
+}
+
+.systemreq p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.systemreq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.systemreq h3{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.systemreq ul li{
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+    font-size: 16px;
+}
+
+.systemreq ul{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease;}
+
+.systemreq.active ul{
+    max-height: 1000px; /* Adjust the maximum height to fit the content */
+    transition: max-height 0.6s ease;}
