@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,700;1,800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.topbar ul{
+    list-style: none;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    letter-spacing: -0.3px;
+    
+}
+
+.topbar{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    height: 60px;
+}
+
+.topbar a{
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.topbar ul h3 a{
+    font-weight: 900;
+    font-size: 26px;
+    color: purple;
+}
+
+.topbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    justify-content:space-between;
+}
+
+.topbar ul li{
+    margin-left: 10px;
+    padding: 10px ;
+}
+
+
+.topbar .right-bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-bar .ilan-paketi{
+    color: #4ab5e2;
+    border: 1px #4ab5e2 solid;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+.right-bar .ilan-paketi:hover{
+    cursor: pointer;
+    color: white;
+    background: #4ab5e2;
+}
+
+.right-bar .giris-yap{
+    cursor: pointer;
+    border: 1px #8316b5 solid;
+    border-radius: 5px;
+    background: #8316b5;
+}
+
+.right-bar .giris-yap:hover{
+    background: rgba(71, 0, 138);
+}
+
+.right-bar .giris-yap a{
+    color: white;
+}
+
+.right-bar .giris-yap .fa-caret-down{
+    margin-left: 10px;
+}
+
+.showcase{
+    border-top: 1px solid black;
+    color: rgb(33, 37, 41);
+    background: rgb(245, 245, 245);
+}
+
+.showcase .showcase-inner{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 80px;
+    gap: 10px;
+}
+
+.showcase-search{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.showcase-search input{
+    padding: 15px 10px;
+    width: 250px;
+    font-weight: 800;
+}
+
+.showcase-search .showcase-button{
+    cursor: pointer;
+    border: 1px #8316b5 solid;
+    border-radius: 3px;
+    background: #8316b5;
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    text-transform: uppercase;
+}
+
+.showcase-button .fa-search{
+    margin-right: 10px;
+}
+
+.showcase-button:hover{
+    background: rgb(71, 0, 138);
+}
+
+.showcase-inner p{
+    text-transform: uppercase;
+    color: grey;
+    margin-top: 10px;
+}
+
+.showcase-inner .showcase-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 700px;
+}
+
+.showcase-inner .showcase-links a{
+    text-decoration: none;
+    background: white;
+    color: #8316b5;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.showcase-inner .showcase-links a:hover{
+    border: 1px solid rgb(71, 0, 138);
+    transition: 0.3s ease-in-out;
+}
