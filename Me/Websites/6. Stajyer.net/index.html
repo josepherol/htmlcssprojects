@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Stajyer.net</title>
+  </head>
+  <body>
+    <section class="topbar">
+      <h2 class="logo"><a href="/">Stajyer.net</a></h2>
+      <ul class="left-bar">
+        <li>
+          <h4><a href="#">Staj Ara</a></h4>
+        </li>
+      </ul>
+      <ul class="right-bar">
+        <li id="giris-yap">
+          <h4>
+            <a class="main-giris-button" href="#">Giriş Yap / Üye Ol</a>
+          </h4>
+          <div id="hidder" class="wrapper-menu hidden">
+            <ul>
+              <li><a href="#">Stajyer Girişi</a></li>
+              <li><a href="#">Şirket Girişi</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="topbar-border-features"></section>
+    <section class="top-search-bar">
+      <input type="text" placeholder="Pozisyonlarda Ara..." />
+      <input type="text" placeholder="Şehirlerde Ara..." />
+      <a href="#" class="search-button">Ara <i class="fas fa-search"></i></a>
+    </section>
+    <section class="topbar-border-features"></section>
+
+    <section class="features">
+      <div class="search-bar">search-bar</div>
+
+      <div class="cards-section">
+        <!-- FIRST CARD -->
+
+        <div class="advert-cards">
+          <div class="advert-cards-upper">
+            <div class="image-division">
+              <img
+                class="company-logo"
+                src="data:image/png;base64,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"
+                alt="CompanyLogo"
+              />
+            </div>
+            <div class="advert-cards-main">
+              <h3 class="advert-title">Satış Müdürü</h3>
+              <p class="company-name">Çetaş Otomotiv</p>
+              <ul class="advert-primary">
+                <li>Manisa</li>
+                <li>-</li>
+                <li>İş Yerinde</li>
+              </ul>
+            </div>
+          </div>
+          <div class="advert-cards-bottom">
+            <ul class="advert-secondary">
+              <li>Tam zamanlı</li>
+              <li>Bugün</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- SECOND CARD -->
+
+        <div class="advert-cards">
+          <div class="advert-cards-upper">
+            <div class="image-division">
+              <img
+                class="company-logo"
+                src="data:image/png;base64,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"
+                alt="CompanyLogo"
+              />
+            </div>
+            <div class="advert-cards-main">
+              <h3 class="advert-title">Satış Müdürü</h3>
+              <p class="company-name">Çetaş Otomotiv</p>
+              <ul class="advert-primary">
+                <li>Manisa</li>
+                <li>-</li>
+                <li>İş Yerinde</li>
+              </ul>
+            </div>
+          </div>
+          <div class="advert-cards-bottom">
+            <ul class="advert-secondary">
+              <li>Tam zamanlı</li>
+              <li>Bugün</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="empty-side">empty-side</div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>

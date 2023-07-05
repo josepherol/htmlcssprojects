@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.topbar{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar > * {
+    padding: 10px 10px 10px 0;
+}
+
+.topbar .left-bar a:hover{
+    color: #52B788;
+}
+
+.topbar .right-bar .main-giris-button{
+    background: #2D6A4F;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.topbar .right-bar .main-giris-button:hover {
+    background: #1B4332;
+}
+
+
+.topbar h2 a{
+    color: #2D6A4F;
+}
+
+.left-bar{
+    flex: 1;
+    margin-left: 20px;
+}
+
+.right-bar{
+    position: relative;
+}
+
+.hidden{
+    display: none;
+}
+
+.wrapper-menu{
+    position: absolute;
+    top: 95%;
+    border: 1px solid blue;
+}
+
+.wrapper-menu a{
+    background: red;
+    padding: 5px 30px;
+}
+
+.topbar-border-features{
+    border-top: 1px solid #f4f4f4;
+}
+
+.top-search-bar{
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 10px 10px 0;
+}
+
+.top-search-bar > *{
+    margin-right: 10px;
+    font-weight: 400;
+}
+
+.top-search-bar input{
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #555;
+    padding: 5px;
+    padding: 10px 120px 10px 10px;
+}
+
+.top-search-bar input::placeholder {
+    color: #999;
+}
+
+.features{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.search-bar{
+    flex: 1;
+    background: red;
+}
+
+.cards-section{
+    flex: 3;
+}
+
+.advert-cards{
+    border: 1px solid #f4f4f4;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    margin: 0 10px 10px 10px;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.advert-cards:hover{
+    border: 1px solid #c9c8c8;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.empty-side{
+    flex: 1;
+    background: green;
+}
+
+.search-button{
+    background: #2D6A4F;
+    color: white;
+    font-weight: 400;
+    padding: 10px 20px 10px 10px;
+    border-radius: 5px;
+}
+
+.fa-search{
+    margin-left: 5px;
+}
+
+.search-button:hover{
+    background: #1B4332;
+}
+
+.company-logo{
+    width: 100px;
+}
+
+.advert-cards{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.advert-cards-upper{
+    display: flex;
+}
+
+.advert-cards-main > *{
+    padding: 0 10px 0 10px;
+}
+
+.advert-primary:last-child{
+    margin-top: 24px;
+}
+
+.advert-primary{
+    display: flex;
+}
+
+.advert-cards-bottom .advert-secondary{
+    display: flex;
+    justify-content: space-between;
+}

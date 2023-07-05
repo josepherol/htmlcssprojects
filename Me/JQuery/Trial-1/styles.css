@@ -1,0 +1,53 @@
+.blue{
+    color: blue;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-size: 24px;
+    display: flex;
+}
+
+.first-element{
+    display: flex;
+}
+
+.element{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    
+}
+
+ul{
+    list-style: none;
+    border: 1px solid grey;
+    width: fit-content;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.content {
+    display: none;
+  }
+  
+
+ul li{
+    padding: 20px;
+    border-top: 1px solid gray;
+    border-left: 10px solid transparent;
+}
+
+.active{
+    border-left: 10px solid blue;
+}
+
+ul li:first-child{
+    border-top: 0;
+}
