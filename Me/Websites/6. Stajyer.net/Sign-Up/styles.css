@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    align-items: center;
+    margin-top: 200px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sign-in{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #f4f4f4;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+
+
+.sign-in-upper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.sign-in-upper input{
+    padding: 10px 120px 10px 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #cfcfcf;
+    box-shadow: rgba(0, 0, 0, 0.35) 1px 1px 1px;
+}
+
+.sign-in-upper input::placeholder{
+    font-weight: 100;
+    color: #a8a8a8;
+}
+
+.sign-in-upper .remember-me{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sign-in-upper .remember-me .remember-me-upper{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+
+.button{
+    background: #2D6A4F;
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+}
+
+.button:hover{
+    background: #1B4332;
+}
+
+a{
+    text-decoration: none;
+    color: #2D6A4F;
+}
+
+.bottom-links{
+    margin-bottom: 10px;
+}
+
+.bottom-links a:hover{
+    text-decoration: underline;
+}
+
+.sign-in-bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-in-bottom a{
+    color: black;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #f3f3f3;
+    padding: 5px 25px;
+    transition: border .3s;
+}
+
+.sign-in-bottom a:hover{
+    border: 1px solid #cfcfcf;
+}
+
+.sign-in .sign-in-bottom .bold{
+    font-weight: 800;
+}
+
+.sign-in-bottom i{
+    margin-right: 10px;
+}
+
+
